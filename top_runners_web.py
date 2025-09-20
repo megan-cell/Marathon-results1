@@ -1,4 +1,4 @@
-pip install openpyxl
+
 import streamlit as st
 import pandas as pd
 
@@ -117,4 +117,5 @@ elif gender == 'Female':
             filtered_df = wdf[wdf['Name'] == name][['Name', 'Time', 'Course', 'Date']].copy()
             filtered_df.insert(0, 'Rank', range(1, len(filtered_df) + 1))
             st.dataframe(filtered_df)
+
 
